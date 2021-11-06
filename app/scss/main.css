@@ -1,0 +1,269 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+  background: #c5e4e7;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px 10px;
+  background: #f4fafa;
+  color: #00494d;
+  border: none;
+  outline-color: #26c0ab;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+
+span {
+  font-family: 'Space Mono';
+}
+
+.logo {
+  padding: 2rem 0 1.5rem 0;
+}
+
+main {
+  background: white;
+  border-radius: 20px;
+  text-align: left;
+  padding: 1.7rem 1.3rem;
+}
+
+main .first-div {
+  position: relative;
+}
+
+main .first-div p {
+  padding-bottom: 0.8rem;
+}
+
+main .first-div img {
+  position: absolute;
+  top: 55px;
+  left: 15px;
+}
+
+.container .second-div {
+  margin-top: 2rem;
+}
+
+.container .second-div p {
+  padding-bottom: 0.8rem;
+}
+
+.container .second-div .grid-layout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.8rem;
+}
+
+.container .second-div .grid-layout > button {
+  padding: 15px;
+  background: #00494d;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container .second-div .grid-layout > button:hover {
+  background: #26c0ab;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container .second-div input {
+  border-radius: 10px;
+}
+
+.container .second-div input::-webkit-input-placeholder {
+  font-family: 'Space Mono';
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.container .second-div input:-ms-input-placeholder {
+  font-family: 'Space Mono';
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.container .second-div input::-ms-input-placeholder {
+  font-family: 'Space Mono';
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.container .second-div input::placeholder {
+  font-family: 'Space Mono';
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.container .third-div {
+  margin-top: 2.5rem;
+  position: relative;
+}
+
+.container .third-div p {
+  position: absolute;
+  top: -10px;
+  padding-bottom: 0.8rem;
+}
+
+.container .third-div img {
+  position: absolute;
+  top: 40px;
+  left: 15px;
+}
+
+.container .third-div small {
+  margin-left: 250px;
+}
+
+.fourth-div {
+  margin-top: 2rem;
+  padding: 25px 17px;
+  border-radius: 20px;
+  background: #00494d;
+}
+
+.fourth-div p {
+  color: white;
+}
+
+.fourth-div small {
+  color: #7f9c9f;
+}
+
+.fourth-div .right {
+  color: #26c0ab;
+}
+
+.fourth-div .amount-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.fourth-div .total-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.fourth-div .last-button {
+  width: 100%;
+  text-transform: uppercase;
+  background: #0f6266;
+  color: #00494d;
+  font-weight: 900;
+  padding: 15px 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.fourth-div .last-button:hover {
+  background: #26c0ab;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 500px) {
+  main {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 80px 80px;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 60%;
+    padding-right: 1.8rem;
+  }
+  body main .container {
+    width: 45%;
+  }
+  body main .container .second-div .grid-layout {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  body main .container .third-div {
+    position: relative;
+  }
+  body main .container .third-div small {
+    margin-left: 340px;
+  }
+  body main .fourth-div {
+    width: 50%;
+    position: relative;
+    top: -20px;
+    height: 400px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  body main .fourth-div .amount-div {
+    margin-top: 30px;
+  }
+  body main .fourth-div .right {
+    font-size: 37px;
+  }
+  body main .last-button {
+    margin-top: 100px;
+    border-radius: 0px;
+    background: white;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,140 @@
+.logo {
+    padding: 2rem 0 1.5rem 0;
+}
+
+main {
+    background: $white;
+    border-radius: 20px;
+    text-align: left;
+    padding: 1.7rem 1.3rem;
+
+    .first-div{
+        position: relative;
+        p {
+            padding-bottom: 0.8rem;
+        }
+
+        img {
+          position: absolute;
+          top: 55px; 
+          left: 15px; 
+        }
+
+    } 
+}
+
+.container {
+
+    .second-div {
+        margin-top: 2rem;
+        p {
+            padding-bottom: 0.8rem;
+        }
+    
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0.8rem;
+    
+            > button {
+                padding: 15px;
+                background: $veryDarkCyan;
+                border-radius: 10px;
+                cursor: pointer;
+                border: none;
+                color: $white;
+                font-size: 17px;
+                font-weight: 700;
+                transition: $easeInOut;
+    
+                &:hover {
+                    background: $strongCyan;
+                    transition: $easeInOut;
+                }
+    
+            }
+        }
+
+        input {
+            border-radius: 10px;
+
+            &::placeholder {
+                font-family: 'Space Mono';
+                font-size: 1.2rem;
+                text-align: center;
+            }
+        }
+    }
+    
+    .third-div {
+        margin-top: 2.5rem;
+        position: relative;
+    
+        p {
+            position: absolute;
+            top: -10px;
+            padding-bottom: 0.8rem;
+        }
+    
+        img {
+            position: absolute;
+            top: 40px; 
+            left: 15px; 
+          }
+
+        small {
+            margin-left: 250px;
+        }
+    }
+}
+
+.fourth-div {
+    margin-top: 2rem;
+    padding: 25px 17px;
+    border-radius: 20px;
+    background: $veryDarkCyan;
+
+    p {
+        color: $white;
+    }
+
+    small {
+        color: $darkGrayishCyanTwo;
+    }
+
+    .right {
+        color: $strongCyan;
+    }
+
+    .amount-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+
+    .total-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    .last-button {
+        width: 100%;
+        text-transform: uppercase;
+        background: hsl(183, 74%, 23%);
+        color: $veryDarkCyan;
+        font-weight: 900;
+        padding: 15px 0;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        transition: $easeInOut;
+
+        &:hover {
+            background: $strongCyan;
+            transition: $easeInOut;
+        }
+    }
+}

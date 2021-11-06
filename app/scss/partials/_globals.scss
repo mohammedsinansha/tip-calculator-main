@@ -1,0 +1,29 @@
+@import "variables";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Mono', Arial, Helvetica, sans-serif;
+    background: $lightGrayishCyan;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px 10px;
+    background: $lightGrayishCyanTwo;
+    color: $veryDarkCyan;
+    border: none;
+    outline-color: $strongCyan;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: right;
+}
+
+span {
+    font-family: 'Space Mono';
+}

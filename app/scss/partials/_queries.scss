@@ -1,0 +1,68 @@
+@media (min-width: 500px) {
+    main {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 80px;
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            padding-right: 1.8rem;
+
+            .container {
+                width: 45%;
+                .second-div {
+                    .grid-layout {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                }
+
+                .third-div {
+                    position: relative;
+
+                    small {
+                        margin-left: 340px;
+                    }
+                
+                    
+                }
+            }
+
+            .fourth-div {
+                width: 50%;
+                position: relative;
+                top: -20px;
+                height: 400px;
+                padding-left: 30px;
+                padding-right: 30px;
+
+                .amount-div {
+                    margin-top: 30px;
+                }
+
+                .right {
+                    font-size: 37px;
+                }
+
+                
+            }
+
+            .last-button {
+                margin-top: 100px;
+                border-radius: 0px;
+                background: $white;
+            }
+        }
+    }
+    
+}
